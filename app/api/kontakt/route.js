@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 // Empfänger — feste Adresse, die alle Anfragen erhält
-const RECIPIENT = "info@nes-energygroup.com";
+const RECIPIENT = "Musawar.Khawaja@nes-energygroup.com";
 
 export async function POST(request) {
   try {
