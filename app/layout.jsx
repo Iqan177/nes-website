@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/lib/LanguageContext";
 
 export const metadata = {
-  title: "NES Energy Group — Sodium-Ionen Batteriespeicher",
-  description: "NES liefert maßgeschneiderte Sodium-Ionen Batteriespeicher-Container. Sicher, umweltfreundlich, bis zu 20% günstiger als Lithium-Ionen.",
+  title: "NES Energy Group — Batteriespeicher",
+  description: "NES liefert Sodium-Ionen und Lithium-Ionen Batteriespeicher für Industrie, Stadtwerke und Energiehandel. Schlüsselfertig, betreut aus Deutschland.",
 };
 
 export default function RootLayout({ children }) {
