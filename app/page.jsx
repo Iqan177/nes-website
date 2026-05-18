@@ -19,7 +19,7 @@ export default function HomePage() {
       {/* Zwei Technologien */}
       <section className="py-24 lg:py-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <SectionHeader eyebrow={isDE ? "Unser Portfolio" : "Our portfolio"} title={isDE ? "Zwei Technologien. Eine Quelle." : "Two technologies. One source."} description={isDE ? "NES liefert Sodium-Ionen-Speicher aus eigenem Haus und Lithium-Ionen-Systeme von Lisiner — für jede Anforderung die passende Lösung." : "NES supplies sodium-ion storage in-house and lithium-ion systems from Lisiner — the right solution for every requirement."} />
+          <SectionHeader eyebrow={isDE ? "Unser Portfolio" : "Our portfolio"} title={isDE ? "Zwei Technologien. Eine Quelle." : "Two technologies. One source."} description={isDE ? "NES liefert Sodium-Ionen-Speicher aus eigenem Haus und Lithium-Ionen-Systeme — für jede Anforderung die passende Lösung." : "NES supplies sodium-ion storage in-house and lithium-ion — the right solution for every requirement."} />
 
           <div className="mt-14 grid md:grid-cols-2 gap-6">
             {/* Sodium */}
@@ -42,7 +42,7 @@ export default function HomePage() {
             {/* Lithium */}
             <div className="rounded-2xl border border-cyan/20 bg-pearl-50 overflow-hidden">
               <div className="bg-petrol-700 p-6 lg:p-8">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan mb-2">Lisiner — Lithium-Ion</p>
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan mb-2">Lithium-Ion</p>
                 <h3 className="font-display text-3xl font-medium tracking-tighter-2 text-pearl">Lithium-Ionen Speicher</h3>
               </div>
               <div className="p-6 lg:p-8 grid grid-cols-2 gap-px bg-petrol/10 border-t border-petrol/10">

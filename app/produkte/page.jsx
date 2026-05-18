@@ -78,12 +78,9 @@ export default function ProdukktePage() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan-700 mb-2 flex items-center gap-2"><span className="inline-block w-4 h-px bg-cyan-700" />Lisiner — Lithium-Ion</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan-700 mb-2 flex items-center gap-2"><span className="inline-block w-4 h-px bg-cyan-700" />Lithium-Ion</p>
               <h2 className="font-display text-4xl lg:text-5xl font-medium tracking-tighter-2 text-petrol">{isDE ? "Lithium-Ionen Systeme" : "Lithium-Ion Systems"}</h2>
             </div>
-            <a href="https://www.lisiner.com/en/" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-2 text-[13px] font-mono text-petrol/50 hover:text-petrol transition-colors">
-              lisiner.com ↗
-            </a>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {LITHIUM_PRODUCTS.map((p, i) => (

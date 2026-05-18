@@ -66,9 +66,9 @@ export default function TechnologiePage() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="inline-block w-3 h-3 rounded-full bg-cyan-600" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-cyan-700">Lisiner — Lithium-Ion</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-cyan-700">Lithium-Ion</p>
           </div>
-          <SectionHeader eyebrow="" title={isDE ? "Vorteile: Lithium-Ionen (LFP)" : "Advantages: Lithium-ion (LFP)"} description={isDE ? "Bewährte LFP-Technologie von Lisiner — für Anwendungen, die auf hohe Energiedichte und etablierte Infrastruktur setzen." : "Proven LFP technology from Lisiner — for applications relying on high energy density and established infrastructure."} />
+          <SectionHeader eyebrow="" title={isDE ? "Vorteile: Lithium-Ionen (LFP)" : "Advantages: Lithium-ion (LFP)"} description={isDE ? "Bewährte LFP-Technologie — für Anwendungen, die auf hohe Energiedichte und etablierte Infrastruktur setzen." : "Proven LFP technology — for applications relying on high energy density and established infrastructure."} />
           <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-petrol/10 border border-petrol/10 rounded-2xl overflow-hidden">
             {LITHIUM_ADVANTAGES.map((a, i) => (
               <motion.div key={a.title} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.5, delay: i * 0.06 }} className="bg-pearl-50 p-8 lg:p-10">
@@ -78,7 +78,7 @@ export default function TechnologiePage() {
               </motion.div>
             ))}
           </div>
-          <p className="mt-6 font-mono text-[11px] text-petrol/40">{isDE ? "Lithium-Ionen Produkte werden in Kooperation mit Lisiner geliefert." : "Lithium-ion products are delivered in cooperation with Lisiner."} <a href="https://www.lisiner.com/en/" target="_blank" rel="noopener noreferrer" className="hover:text-petrol transition-colors">→ lisiner.com</a></p>
+          <p className="mt-6 font-mono text-[11px] text-petrol/40">{isDE ? "Lithium-Ionen Produkte werden geliefert." : "Lithium-ion products are delivered."}</p>
         </div>
       </section>
 

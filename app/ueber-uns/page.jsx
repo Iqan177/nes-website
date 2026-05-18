@@ -26,7 +26,7 @@ export default function UeberUnsPage() {
               <SectionHeader eyebrow={isDE ? "Unsere Mission" : "Our mission"} title={isDE ? "Sichere Speicher. Für alle." : "Safe storage. For everyone."} />
             </div>
             <div className="lg:col-span-7 lg:pt-3 space-y-5 text-lg text-petrol/80 leading-relaxed">
-              <p>{isDE ? "NES bietet zwei Technologiefamilien: Sodium-Ionen für zukunftssichere, rohstoffunabhängige Anwendungen und Lithium-Ionen (Lisiner) für bewährte Hochleistungsanwendungen." : "NES offers two technology families: sodium-ion for future-proof, raw material-independent applications and lithium-ion (Lisiner) for proven high-performance applications."}</p>
+              <p>{isDE ? "NES bietet zwei Technologiefamilien: Sodium-Ionen für zukunftssichere, rohstoffunabhängige Anwendungen und Lithium-Ionen für bewährte Hochleistungsanwendungen." : "NES offers two technology families: sodium-ion for future-proof, raw material-independent applications and lithium-ion for proven high-performance applications."}</p>
               <p className="text-petrol font-medium">{isDE ? "Maßgeschneidert. Schlüsselfertig. Betreut aus Deutschland." : "Customised. Turnkey. Supported from Germany."}</p>
             </div>
           </div>

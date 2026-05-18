@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Icon from "./Icon";
 import { useLang } from "@/lib/LanguageContext";
 
-const INTERESTS_DE = ["Sodium-Ionen Speicher", "Lithium-Ionen Speicher (Lisiner)", "Erstberatung", "Energiehandel", "Sonstiges"];
-const INTERESTS_EN = ["Sodium-ion storage", "Lithium-ion storage (Lisiner)", "Initial consultation", "Energy trading", "Other"];
+const INTERESTS_DE = ["Sodium-Ionen Speicher", "Lithium-Ionen Speicher", "Erstberatung", "Energiehandel", "Sonstiges"];
+const INTERESTS_EN = ["Sodium-ion storage", "Lithium-ion storage", "Initial consultation", "Energy trading", "Other"];
 
 export default function ContactForm() {
   const { lang } = useLang();
@@ -57,7 +57,7 @@ export default function ContactForm() {
         <label className="font-mono text-[10px] uppercase tracking-[0.18em] text-petrol/50 mb-2 block">{isDE ? "Nachricht" : "Message"}</label>
         <textarea rows={5} value={form.message} onChange={(e) => update("message", e.target.value)} placeholder={isDE ? "Beschreiben Sie kurz Ihr Projekt oder Ihre Frage." : "Briefly describe your project or question."} className="w-full bg-transparent border-b border-petrol/15 focus:border-cyan-700 outline-none py-3 text-[15px] text-petrol placeholder:text-petrol/40 transition-colors resize-none" />
       </div>
-      {status === "error" && <div className="mt-4 px-4 py-3 rounded-xl bg-red-50 border border-red-200 text-[13px] text-red-700">{isDE ? "Fehler. Bitte schreiben Sie direkt an " : "Error. Please write directly to "}<a href="mailto:Musawar.Khawaja@nes-energygroup.com" className="underline">Musawar.Khawaja@nes-energygroup.com</a></div>}
+      {status === "error" && <div className="mt-4 px-4 py-3 rounded-xl bg-red-50 border border-red-200 text-[13px] text-red-700">{isDE ? "Fehler. Bitte schreiben Sie direkt an " : "Error. Please write directly to "}<a href="mailto:info@nes-energygroup.com" className="underline">info@nes-energygroup.com</a></div>}
       <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-end gap-4 pt-6 border-t border-petrol/10">
         <button type="submit" disabled={status === "sending"} className="group inline-flex items-center gap-3 bg-petrol text-pearl hover:bg-petrol-700 px-6 py-3.5 rounded-full text-[14.5px] font-medium transition-all shadow-lg shadow-petrol/15 disabled:opacity-60 disabled:cursor-not-allowed">
           {status === "sending" ? <><span className="inline-block w-4 h-4 border-2 border-pearl/30 border-t-pearl rounded-full animate-spin" />{isDE ? "Wird gesendet…" : "Sending…"}</> : <>{isDE ? "Anfrage senden" : "Send request"}<svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="transition-transform group-hover:translate-x-1"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg></>}
