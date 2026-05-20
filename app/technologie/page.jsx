@@ -7,6 +7,7 @@ import CTASection from "@/components/CTASection";
 import Icon from "@/components/Icon";
 import { SODIUM_ADVANTAGES, LITHIUM_ADVANTAGES, TECH_SPECS } from "@/lib/data";
 import { useLang } from "@/lib/LanguageContext";
+import { ImageBanner } from "@/components/BatteryParkImage";
 
 export default function TechnologiePage() {
   const { lang } = useLang();
@@ -25,11 +26,9 @@ export default function TechnologiePage() {
       {/* Stats */}
       <section className="py-16 border-t border-petrol/10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
             {[
               { label: isDE ? "Sodium: Lebensdauer" : "Sodium: lifetime", value: TECH_SPECS.cycles, prefix: "> ", suffix: "" },
-              { label: "Sodium: LCOS", value: TECH_SPECS.lcos, prefix: "< ", suffix: " €/kWh" },
-              { label: isDE ? "Sodium: Kostenersparnis" : "Sodium: cost savings", value: TECH_SPECS.costSavings, prefix: "", suffix: " %" },
               { label: isDE ? "Betriebstemperatur" : "Operating temp.", value: "−40–+80", noAnimate: true, suffix: " °C" },
             ].map((s) => (
               <motion.div key={s.label} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.5 }}>
@@ -58,6 +57,19 @@ export default function TechnologiePage() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      {/* Bild — Energiespeicher Anlage */}
+      <section className="py-8">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+          <ImageBanner
+            variant="batteryPark"
+            title={isDE ? "Skalierbar von kWh bis GWh" : "Scalable from kWh to GWh"}
+            subtitle={isDE ? "NES Energiespeicher" : "NES energy storage"}
+            height="h-64 lg:h-80"
+          />
         </div>
       </section>
 

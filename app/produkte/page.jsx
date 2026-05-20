@@ -6,6 +6,7 @@ import CTASection from "@/components/CTASection";
 import Icon from "@/components/Icon";
 import { CONTAINER_PRODUCTS, LITHIUM_PRODUCTS, TECH_SPECS } from "@/lib/data";
 import { useLang } from "@/lib/LanguageContext";
+import { ImageBanner } from "@/components/BatteryParkImage";
 
 export default function ProdukktePage() {
   const { lang } = useLang();
@@ -60,7 +61,6 @@ export default function ProdukktePage() {
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-px bg-petrol/10 border border-petrol/10 rounded-2xl overflow-hidden">
             {[
               { label: isDE ? "Lebensdauer" : "Lifetime", value: `> ${TECH_SPECS.cycles.toLocaleString("de-DE")}`, unit: isDE ? "Zyklen" : "cycles" },
-              { label: "LCOS", value: `< ${TECH_SPECS.lcos}`, unit: "€/kWh" },
               { label: isDE ? "Energiedichte" : "Energy density", value: `> ${TECH_SPECS.energyDensity}`, unit: "Wh/kg" },
               { label: isDE ? "Betriebstemperatur" : "Operating temp.", value: "−40 bis +80", unit: "°C" },
             ].map((s) => (
@@ -70,6 +70,19 @@ export default function ProdukktePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      {/* Bild — Großspeicher-Anlage */}
+      <section className="py-8">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+          <ImageBanner
+            variant="solarStorage"
+            title={isDE ? "Großbatteriespeicher für Industrie & Energiehandel" : "Large battery storage for industry & energy trading"}
+            subtitle="NES Energy Storage"
+            height="h-64 lg:h-80"
+          />
         </div>
       </section>
 

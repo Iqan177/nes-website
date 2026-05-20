@@ -20,10 +20,6 @@ export default function Footer() {
             <p className="font-display text-2xl lg:text-3xl tracking-tighter-2 text-petrol leading-tight max-w-md mb-6">
               {isDE ? "Batteriespeicher für Industrie & Energiehandel." : "Battery storage for industry & energy trading."}
             </p>
-            <div className="flex items-center gap-3 text-sm text-petrol/70">
-              <Icon name="pin" className="w-4 h-4" />
-              <span>{COMPANY.address}</span>
-            </div>
           </div>
 
           <div className="col-span-1 lg:col-span-2 lg:col-start-7">

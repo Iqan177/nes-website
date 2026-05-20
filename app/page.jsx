@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
 import SectionHeader from "@/components/SectionHeader";
@@ -7,6 +8,7 @@ import CTASection from "@/components/CTASection";
 import Icon from "@/components/Icon";
 import { SODIUM_ADVANTAGES, LITHIUM_ADVANTAGES, SERVICE_STEPS, APPLICATIONS, CERTIFICATIONS } from "@/lib/data";
 import { useLang } from "@/lib/LanguageContext";
+import { ImageBanner, ImageGrid } from "@/components/BatteryParkImage";
 
 export default function HomePage() {
   const { lang } = useLang();
@@ -56,6 +58,18 @@ export default function HomePage() {
               <div className="p-6 pt-4"><Link href="/produkte#lithium" className="inline-flex items-center gap-2 text-[14px] font-medium text-petrol hover:text-cyan-700 transition-colors"><span className="border-b border-petrol/30 hover:border-cyan-700">{isDE ? "Lithium-Produkte ansehen" : "View lithium products"}</span> →</Link></div>
             </div>
           </div>
+        </div>
+      </section>
+
+
+      {/* Bildgalerie — Batterie- und Containeranlagen */}
+      <section className="py-16 lg:py-20 border-t border-petrol/10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-cyan-700 mb-6 flex items-center gap-2.5">
+            <span className="inline-block w-6 h-px bg-cyan-700" />
+            {isDE ? "Unsere Anlagen" : "Our installations"}
+          </p>
+          <ImageGrid />
         </div>
       </section>
 

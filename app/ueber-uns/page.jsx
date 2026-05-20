@@ -5,6 +5,7 @@ import CTASection from "@/components/CTASection";
 import Icon from "@/components/Icon";
 import { COMPANY, TEAM } from "@/lib/data";
 import { useLang } from "@/lib/LanguageContext";
+import { ImageBanner } from "@/components/BatteryParkImage";
 
 export default function UeberUnsPage() {
   const { lang } = useLang();
@@ -38,8 +39,7 @@ export default function UeberUnsPage() {
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-5">
               <SectionHeader eyebrow={isDE ? "Unser Standort" : "Our location"} title="Nordhorn, Niedersachsen." description={isDE ? "Nordwestdeutschland — ideal für den deutschlandweiten Service." : "North-west Germany — ideal for nationwide service."} />
-              <div className="mt-8 space-y-3">
-                <div className="flex items-center gap-3 text-petrol/70"><Icon name="pin" className="w-4 h-4 text-cyan-700" /><span>{COMPANY.address}</span></div>
+              
                 <div className="flex items-center gap-3 text-petrol/70"><Icon name="phone" className="w-4 h-4 text-cyan-700" /><a href={`tel:${COMPANY.phone}`} className="hover:text-petrol transition-colors">{COMPANY.phone}</a></div>
                 <div className="flex items-center gap-3 text-petrol/70"><Icon name="mail" className="w-4 h-4 text-cyan-700" /><a href={`mailto:${COMPANY.email}`} className="hover:text-petrol transition-colors">{COMPANY.email}</a></div>
               </div>
@@ -58,6 +58,12 @@ export default function UeberUnsPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-8">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+          <ImageBanner variant="containerFacility" title={isDE ? "Schlüsselfertig. Von A bis Z." : "Turnkey. From A to Z."} subtitle="NES Energy Group" height="h-64 lg:h-80" />
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import SectionHeader from "@/components/SectionHeader";
 import Icon from "@/components/Icon";
 import { useLang } from "@/lib/LanguageContext";
+import { ImageBanner } from "@/components/BatteryParkImage";
 
 export default function FlaechePage() {
   const { lang } = useLang();
@@ -33,6 +34,16 @@ export default function FlaechePage() {
                 <p className="text-[14.5px] text-petrol/70 leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
+          </div>
+
+          {/* Bild */}
+          <div className="mb-16">
+            <ImageBanner
+              variant="powerGrid"
+              title={isDE ? "Ihr Grundstück — Teil der Energiezukunft." : "Your land — part of the energy future."}
+              subtitle={isDE ? "NES Energiespeicher-Standorte" : "NES energy storage sites"}
+              height="h-56 lg:h-72"
+            />
           </div>
 
           {/* Form */}
