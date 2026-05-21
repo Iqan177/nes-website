@@ -109,10 +109,7 @@ export function ImageGrid() {
             className="object-cover hover:scale-105 transition-transform duration-700"
             sizes="(max-width: 768px) 50vw, 33vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-petrol/70 via-transparent to-transparent" />
-          <p className="absolute bottom-3 left-3 font-mono text-[10px] uppercase tracking-[0.15em] text-pearl/80">
-            {item.title}
-          </p>
+          <div className="absolute inset-0 bg-gradient-to-br from-petrol/10 to-transparent" />
         </div>
       ))}
     </div>

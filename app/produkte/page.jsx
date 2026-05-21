@@ -80,7 +80,7 @@ export default function ProdukktePage() {
           <ImageBanner
             variant="solarStorage"
             title={isDE ? "Großbatteriespeicher für Industrie & Energiehandel" : "Large battery storage for industry & energy trading"}
-            subtitle="NES Energy Storage"
+            subtitle="Next Energy Solution Storage"
             height="h-64 lg:h-80"
           />
         </div>

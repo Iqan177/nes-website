@@ -27,8 +27,8 @@ export default function UeberUnsPage() {
           </h1>
           <p className="mt-8 max-w-2xl text-lg lg:text-xl text-petrol/70 leading-relaxed">
             {isDE
-              ? "NES Energy Group vertreibt Sodium-Ionen und Lithium-Ionen Batteriespeicher — schlüsselfertig, mit After Sales & Kundenbetreuung direkt aus Deutschland."
-              : "NES Energy Group supplies sodium-ion and lithium-ion battery storage — turnkey, with after sales & customer support directly from Germany."}
+              ? "Next Energy Solution vertreibt Sodium-Ionen und Lithium-Ionen Batteriespeicher — schlüsselfertig, mit After Sales & Kundenbetreuung direkt aus Deutschland."
+              : "Next Energy Solution supplies sodium-ion and lithium-ion battery storage — turnkey, with after sales & customer support directly from Germany."}
           </p>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function UeberUnsPage() {
           <ImageBanner
             variant="containerFacility"
             title={isDE ? "Schlüsselfertig. Von A bis Z." : "Turnkey. From A to Z."}
-            subtitle="NES Energy Group"
+            subtitle="Next Energy Solution"
             height="h-64 lg:h-80"
           />
         </div>
@@ -117,20 +117,7 @@ export default function UeberUnsPage() {
                 </div>
                 <h3 className="font-display text-xl font-medium tracking-tighter-2 text-petrol mb-1">{member.name}</h3>
                 <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan-700 mb-4">{member.role}</p>
-                <div className="space-y-2 pt-4 border-t border-petrol/10">
-                  {member.email && (
-                    <a href={`mailto:${member.email}`} className="flex items-center gap-2.5 text-[12px] text-petrol/60 hover:text-petrol transition-colors break-all">
-                      <Icon name="mail" className="w-3.5 h-3.5 text-cyan-700 shrink-0" />
-                      {member.email}
-                    </a>
-                  )}
-                  {member.phone && (
-                    <a href={`tel:${member.phone.replace(/\s/g, "")}`} className="flex items-center gap-2.5 text-[12px] text-petrol/60 hover:text-petrol transition-colors">
-                      <Icon name="phone" className="w-3.5 h-3.5 text-cyan-700 shrink-0" />
-                      {member.phone}
-                    </a>
-                  )}
-                </div>
+
               </motion.div>
             ))}
           </div>

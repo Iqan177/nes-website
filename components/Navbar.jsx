@@ -26,7 +26,7 @@ export default function Navbar() {
           </span>
           <div className="flex flex-col leading-none">
             <span className="font-display font-bold text-xl tracking-tightest text-petrol">{COMPANY.name}</span>
-            <span className="font-mono text-[9px] uppercase tracking-[0.18em] text-petrol/50 mt-0.5">Energy Storage</span>
+            <span className="font-sans text-[9px] text-petrol/50 mt-0.5">Next Energy Solution</span>
           </div>
         </Link>
 

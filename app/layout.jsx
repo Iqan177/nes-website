@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/lib/LanguageContext";
 
 export const metadata = {
-  title: "NES Energy Group — Batteriespeicher",
+  title: "Next Energy Solution — Batteriespeicher",
   description: "NES liefert Sodium-Ionen und Lithium-Ionen Batteriespeicher für Industrie, Stadtwerke und Energiehandel. Schlüsselfertig, betreut aus Deutschland.",
 };
 
