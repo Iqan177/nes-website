@@ -2,8 +2,7 @@
 import { motion } from "framer-motion";
 import SectionHeader from "@/components/SectionHeader";
 import CTASection from "@/components/CTASection";
-import Icon from "@/components/Icon";
-import { COMPANY, TEAM } from "@/lib/data";
+import { COMPANY } from "@/lib/data";
 import { useLang } from "@/lib/LanguageContext";
 import { ImageBanner } from "@/components/BatteryParkImage";
 
@@ -90,37 +89,6 @@ export default function UeberUnsPage() {
             subtitle="Next Energy Solution"
             height="h-64 lg:h-80"
           />
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-24 lg:py-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <SectionHeader
-            eyebrow={isDE ? "Unser Team" : "Our team"}
-            title={isDE ? "Die Menschen hinter NES." : "The people behind NES."}
-          />
-          <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {TEAM.map((member, i) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 14 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="rounded-2xl border border-petrol/10 bg-pearl-50 p-7 lg:p-8"
-              >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-petrol to-petrol-700 flex items-center justify-center mb-5">
-                  <span className="font-display text-2xl font-bold text-cyan">
-                    {member.name.split(" ").map(w => w[0]).join("").slice(0, 2)}
-                  </span>
-                </div>
-                <h3 className="font-display text-xl font-medium tracking-tighter-2 text-petrol mb-1">{member.name}</h3>
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan-700 mb-4">{member.role}</p>
-
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
